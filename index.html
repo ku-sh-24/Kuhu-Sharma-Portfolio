@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="MediaQueries.css">
+</head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Kuhu Sharma</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="main-nav">
+      <div class="logo">Kuhu Sharma</div>
+      <div class="main-menu">
+        <div class="main-icon" onclick="ToggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="ToggleMenu()">About</a></li>
+          <li><a href="#Experience" onclick="ToggleMenu()">Experience</a></li>
+          <li><a href="#Projects" onclick="ToggleMenu()">Projects</a></li>
+          <li><a href="#Contact" onclick="ToggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Kuhu.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Kuhu Sharma</h1>
+        <p class="section__text__p2"> <span class="auto-typed"></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/kuhu-sharma-60289b260/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ku-sh-24'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <!-- <p class="section__text__p1"></p> -->
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <div class="slider">
+            <img src="./Assets/about-pic.png" alt="" id="slide-1">
+            <img src="./Assets/arrow.png" alt="" id="slide-2">
+            <img src="./Assets/education.png" alt="" id="slide-3">
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h1>Education</h1> 
+              <br />
+              <p class="description"><b>BTech CSE @ Mahindra University, HYD</b></p>
+              <div class="text-container">
+                <p>
+                  CGPA: 8.0<br>
+                  I have pursued a diverse set of courses, including Database Management Systems, 
+                  Object-Oriented Programming, Machine Learning with Python, Computer Networks, 
+                  and Recommendation Systems. 
+              
+                  Through these courses, I have developed a strong understanding of core subjects 
+                  and gained proficiency in programming languages such as C/C++, Java, and Python. 
+                  Additionally, I have hands-on experience with Hadoop and PySpark from my Big Data 
+                  course, further enhancing my skills in data processing and analysis.
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <div class="slider">
+            <img src="./Assets/linkedin.png" alt="" id="slide-1">
+            <img src="./Assets/github.png" alt="" id="slide-2">
+            <img src="./Assets/education.png" alt="" id="slide-3">
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-11"></a>
+            <a href="#slide-22"></a>
+            <a href="#slide-33"></a>
+          </div>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h1>Intern @ SLB</h1> <br /><p class="description"><i>Associate Business Process Analyst</i></p>
+              <div class="text-container">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                  reprehenderit et laborum, rem, dolore eum quod voluptate
+                  exercitationem nobis, nihil esse debitis maxime facere minus sint
+                  delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                  Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                  reiciendis ea magnam? Nulla, impedit fuga!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <!-- Add more articles here -->
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certifications</h2>
+            <div class="article-container-cert">
+              <article>
+                <img src="./assets/checkmark.png" alt="Certification icon" class="icon" />
+                <div>
+                  <h3>AWS Scholarship</h3>
+                </div>
+              </article>
+              <!-- Add more articles here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/olympic.png"
+                alt="Olympic Data Analysis"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Olympic Data Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ku-sh-24/OLYMPIC-DATA-PROJECT'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ku-sh-24-olympic-data-project-olympic-analysis-v1zr6v.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/movie.png"
+                alt="Movie Recommendation System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ku-sh-24/Movies-Recommender-System'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ku-sh-24/Movies-Recommender-System'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sharmakuhu8042@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/kuhu-sharma-60289b260/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-typed",{
+  strings:["A Coder"],
+  typeSpeed: 150,
+  backSpeed: 150,
+  loop: true
+})
+
+    </script>
+  </body>
+</html>
