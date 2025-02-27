@@ -7,6 +7,17 @@
   padding: 0;
 }
 
+.ocean {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #00bfff, #1e90ff); /* Light to deep ocean blue */
+}
+svg {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
 body{
     font-family: "Poppins", sans-serif;
 }
@@ -38,6 +49,12 @@ nav{
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+}
+
+.title-div{
+  background: linear-gradient(90deg, #140014, #484848);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 a{
@@ -315,10 +332,11 @@ img {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: #ffffffd1;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
+  border: none;
   text-align: center;
 }
 
@@ -369,7 +387,7 @@ img {
   background: white;
   /* border-radius: 8px; */
   /* border: 1px solid #ccc; */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .experience-sub-title {
